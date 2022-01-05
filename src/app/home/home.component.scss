@@ -1,0 +1,33 @@
+@import 'variables';
+
+.home-container{
+  min-height: 100vh;
+}
+
+.navbar{
+  padding : 80px;
+}
+
+
+.hero-section{
+  margin: 0 auto;
+  width : 82%;
+}
+
+.hero-section-heading{
+  color : $grey-color-500;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.hero-section-name{
+  color : $primary-color-500;
+}
+
+.hero-section-tagline{
+  max-width: 1200px;
+  font-size: 24px;
+  margin-top: 8px;
+  color : $grey-color-600;
+}
+
