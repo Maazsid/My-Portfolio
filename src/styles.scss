@@ -47,3 +47,8 @@ ol[class] {
   list-style: none;
 }
 
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
