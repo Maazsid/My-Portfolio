@@ -121,3 +121,53 @@
     }
   }
 }
+
+.skills-section {
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.section-header {
+  position: relative;
+  font-family: $primary-font;
+  color: $grey-color-500;
+  font-size: 65px;
+  font-weight: 600;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0px;
+    width: 70px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: $primary-color-300;
+  }
+}
+
+.skills-wrapper {
+  margin-top:  32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.front-end-card,
+.back-end-card {
+  font-size: 18px;
+  color : $grey-color-500;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+  padding: 16px;
+  flex-basis: 49.5%;
+  border-radius: 7px;
+  font-family: $primary-font;
+}
+
+.front-end-icons-list{
+  margin-top: 16px;
+  & svg{
+    width: 45px;
+    height: 45px;
+  }
+}
