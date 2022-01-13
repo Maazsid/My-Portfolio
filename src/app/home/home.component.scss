@@ -157,7 +157,7 @@
 .back-end-card {
   font-size: 18px;
   color : $grey-color-500;
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
   padding: 16px;
   flex-basis: 49.5%;
   border-radius: 7px;
@@ -165,9 +165,13 @@
 }
 
 .front-end-icons-list{
-  margin-top: 16px;
+  margin-top: 24px;
   & svg{
     width: 45px;
     height: 45px;
   }
+}
+
+.front-end-icon{
+  margin-right: 16px;
 }
