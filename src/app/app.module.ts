@@ -6,13 +6,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectListComponent } from './home/project-list/project-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectListComponent,
   ],
   imports: [
     BrowserModule,

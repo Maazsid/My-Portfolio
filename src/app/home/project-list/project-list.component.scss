@@ -1,0 +1,125 @@
+@import "variables";
+
+.project-list-container {
+  padding: 40px 0px;
+}
+
+.project-card-wrapper {
+  margin-top: 26px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.project-image-container {
+  flex: 1;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-description-container {
+  display: flex;
+  flex-direction: column;
+  font-family: $primary-font;
+  padding: 16px 24px;
+  flex-basis: 450px;
+}
+
+.project-description-header {
+  color: $grey-color-600;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.project-description {
+  margin-top: 16px;
+  color: $grey-color-600;
+}
+
+.tag-list {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 16px;
+  border-radius: 6px;
+  color: $primary-color-500;
+  border: 1px solid $primary-color-500;
+  font-weight: 600;
+  border-radius: 60px;
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+.project-description-action {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.action-btn {
+  padding: 8px 36px;
+  margin-right: 16px;
+  font-family: $secondary-font;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  &.filled {
+    background-color: $primary-color-300;
+    color: #fff;
+    border: none;
+    transition: background-color 300ms;
+    &:hover {
+      background-color: $primary-color-400;
+      cursor: pointer;
+    }
+  }
+  &.outlined {
+    color: $primary-color-500;
+    border: 1px solid $primary-color-500;
+    transition: color 300ms, background-color 300ms;
+    &:hover {
+      background-color: $primary-color-300;
+      color: #fff;
+      cursor: pointer;
+      & svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.action-btn-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  & svg {
+    width: 18px;
+    fill: #fff;
+    height: 18px;
+  }
+  &.outlined {
+    width: 18px;
+    height: 18px;
+    & svg {
+      width: 18px;
+      fill: $primary-color-400;
+      height: 18px;
+      transition: fill 300ms;
+    }
+  }
+}

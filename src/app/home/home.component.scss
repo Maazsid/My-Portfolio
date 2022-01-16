@@ -147,7 +147,7 @@
 }
 
 .skills-wrapper {
-  margin-top:  32px;
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,22 +156,47 @@
 .front-end-card,
 .back-end-card {
   font-size: 18px;
-  color : $grey-color-500;
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  color: $grey-color-500;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   padding: 16px;
   flex-basis: 49.5%;
   border-radius: 7px;
   font-family: $primary-font;
 }
 
-.front-end-icons-list{
+.front-end-icons-list {
   margin-top: 24px;
-  & svg{
+  & svg {
     width: 45px;
     height: 45px;
   }
 }
 
-.front-end-icon{
+.front-end-icon {
   margin-right: 16px;
+}
+
+.project-section {
+  width: 82%;
+  margin: 0 auto;
+  padding: 30px 0px;
+  min-height: 100vh;
+}
+
+.project-section-header {
+  position: relative;
+  font-family: $primary-font;
+  color: $grey-color-500;
+  font-size: 65px;
+  font-weight: 600;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 0px;
+    width: 70px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: $primary-color-300;
+  }
 }
