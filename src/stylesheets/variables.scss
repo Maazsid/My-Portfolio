@@ -8,10 +8,27 @@ $secondary-font: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
   "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
   sans-serif;
 
-$primary-color-500: hsl(225, 100%, 65%);
-$primary-color-400: hsl(223deg 100% 62%);
-$primary-color-300 : hsl(220deg 100% 65%);
-$primary-color-200: hsl(225, 86%, 75%);
+$primary-color-900: hsl(205, 100%, 21%);
+$primary-color-800: hsl(205, 87%, 29%);
+$primary-color-700: hsl(205, 82%, 33%);
+$primary-color-600: hsl(205, 76%, 39%);
+$primary-color-500: hsl(205, 67%, 45%);
+$primary-color-400: hsl(205, 75%, 55%);
+$primary-color-300: hsl(205, 74%, 65%);
+$primary-color-200: hsl(205, 84%, 74%);
+$primary-color-100: hsl(205, 97%, 85%);
+$primary-color-50: hsl(205, 79%, 92%);
+
+$neutral-color-900: hsl(209, 61%, 16%);
+$neutral-color-800: hsl(211, 39%, 23%);
+$neutral-color-700: rgb(50, 77, 103);
+$neutral-color-600: hsl(209, 28%, 39%);
+$neutral-color-500: hsl(210, 22%, 49%);
+$neutral-color-400: hsl(209, 23%, 60%);
+$neutral-color-300: hsl(211, 27%, 70%);
+$neutral-color-200: hsl(210, 31%, 80%);
+$neutral-color-100: hsl(212, 33%, 89%);
+$neutral-color-50: hsl(210, 36%, 96%);
 
 $grey-color-600: hsl(220, 12%, 30%);
 $grey-color-500: hsl(240, 12%, 35%);

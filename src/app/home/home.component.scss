@@ -28,6 +28,7 @@
   font-family: $secondary-font;
   font-weight: 300;
   &:hover {
+    cursor: pointer;
     color: $primary-color-400;
   }
   &:hover::after {
@@ -57,14 +58,14 @@
 }
 
 .hero-section-heading {
-  color: $grey-color-500;
+  color: $neutral-color-600;
   font-size: 80px;
   font-weight: 600;
 }
 
 .hero-section-name {
   position: relative;
-  color: $primary-color-500;
+  color: $primary-color-400;
 }
 
 .hero-section-handwave-icon {
@@ -77,7 +78,7 @@
   max-width: 1200px;
   font-size: 24px;
   margin-top: 8px;
-  color: $grey-color-600;
+  color: $neutral-color-600;
 }
 
 .hero-section-action-wrapper {
@@ -90,15 +91,14 @@
     width: 200px;
     border-radius: 6px;
     font-size: 16px;
-    background-color: hsl(235, 100%, 80%);
     color: #fff;
     font-family: $secondary-font;
-    background-color: $primary-color-300;
+    background-color: $primary-color-400;
     border: none;
     transition: background-color 300ms;
-    border: 1px solid $primary-color-300;
+    border: 1px solid $primary-color-400;
     &:hover {
-      background-color: $primary-color-400;
+      background-color: $primary-color-500;
       cursor: pointer;
     }
   }
@@ -108,14 +108,13 @@
     width: 200px;
     border-radius: 6px;
     font-size: 16px;
-    background-color: hsl(235, 100%, 80%);
     font-family: $secondary-font;
     color: $primary-color-500;
     background-color: $grey-color-100;
-    border: 1px solid $primary-color-300;
+    border: 1px solid $primary-color-400;
     transition: background-color 300ms, color 300ms;
     &:hover {
-      background-color: $primary-color-300;
+      background-color: $primary-color-400;
       color: #fff;
       cursor: pointer;
     }
@@ -131,7 +130,7 @@
 .section-header {
   position: relative;
   font-family: $primary-font;
-  color: $grey-color-500;
+  color: $neutral-color-600;
   font-size: 65px;
   font-weight: 600;
   &::after {
@@ -149,17 +148,18 @@
 .skills-wrapper {
   margin-top: 32px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 .front-end-card,
 .back-end-card {
   font-size: 18px;
-  color: $grey-color-500;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  color: $neutral-color-600;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
   padding: 16px;
-  flex-basis: 49.5%;
+  margin-top: 16px;
   border-radius: 7px;
   font-family: $primary-font;
 }
@@ -198,5 +198,54 @@
     height: 10px;
     border-radius: 50px;
     background-color: $primary-color-300;
+  }
+}
+.contact-section {
+  width: 82%;
+  margin: 0 auto;
+  padding: 30px 0px;
+  min-height: 50vh;
+}
+
+.footer {
+  margin-top: 56px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  margin-right: 24px;
+}
+
+.footer-icon {
+  & svg {
+    fill: $neutral-color-700;
+    width: 45px;
+    height: 45px;
+    transition: fill 300ms;
+    &:hover {
+      fill: $neutral-color-800;
+      cursor: pointer;
+    }
+  }
+}
+.footer-icon-linkedin {
+  & svg {
+    width: 45px;
+    height: 45px;
+    &:hover {
+      path:nth-of-type(1) {
+        cursor: pointer;
+        fill: $neutral-color-800;
+        cursor: pointer;
+      }
+    }
+  }
+
+  path:nth-of-type(1) {
+    fill: $neutral-color-700;
+    transition: fill 300ms;
   }
 }

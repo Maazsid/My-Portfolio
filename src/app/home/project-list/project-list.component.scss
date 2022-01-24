@@ -1,7 +1,7 @@
 @import "variables";
 
 .project-list-container {
-  padding: 40px 0px;
+  padding: 16px 0px;
 }
 
 .project-card-wrapper {
@@ -9,12 +9,12 @@
 }
 
 .project-card {
+  padding: 18px;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
 }
 
 .project-image-container {
@@ -29,25 +29,26 @@
   display: flex;
   flex-direction: column;
   font-family: $primary-font;
-  padding: 16px 24px;
+  padding: 0px;
+  padding-left: 18px;
   flex-basis: 450px;
 }
 
 .project-description-header {
-  color: $grey-color-600;
+  color: $neutral-color-700;
   font-weight: 500;
   font-size: 26px;
 }
 
 .project-description {
   margin-top: 16px;
-  color: $grey-color-600;
+  color: $neutral-color-700;
 }
 
 .tag-list {
   margin-top: 8px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -55,8 +56,8 @@
 .tag {
   padding: 4px 16px;
   border-radius: 6px;
-  color: $primary-color-500;
-  border: 1px solid $primary-color-500;
+  color: $primary-color-400;
+  border: 1px solid $primary-color-400;
   font-weight: 600;
   border-radius: 60px;
   margin-right: 16px;
@@ -90,7 +91,9 @@
   }
   &.outlined {
     color: $primary-color-500;
-    border: 1px solid $primary-color-500;
+    border: none;
+    background-color: #e9f5ff;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
     transition: color 300ms, background-color 300ms;
     &:hover {
       background-color: $primary-color-300;

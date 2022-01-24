@@ -2,69 +2,63 @@
   <nav class="navbar">
     <ul class="navbar-wrapper">
       <li class="nav-link-wrapper">
-        <a class="nav-link" href="#"> Projects </a>
+        <a (click)=" goToProjects()" class="nav-link"> Projects </a>
       </li>
       <li class="nav-link-wrapper">
-        <a class="nav-link" href="#"> About </a>
-      </li>
-      <li class="nav-link-wrapper">
-        <a class="nav-link" href="#"> Contact </a>
+        <a class="nav-link" href="#"> Resume </a>
       </li>
     </ul>
   </nav>
-
   <section class="hero-section">
-    <h1 class="hero-section-heading">
-      Hi, I'm
-      <span class="hero-section-name">
-        Maaz <span class="hero-section-handwave-icon"></span
-      ></span>
+    <h1 class="hero-section-heading"> Hi, I'm <span class="hero-section-name"> Maaz <span class="hero-section-handwave-icon"></span></span>
     </h1>
-    <p class="hero-section-tagline">
-      I'm a Full Stack Developer Specializing in MEAN and MERN stack. As a
-      developer I take on several different projects creating mostly web
-      applications.
-    </p>
+    <p class="hero-section-tagline"> I'm a Full Stack Developer Specializing in MEAN and MERN stack. As a developer I take on several different projects creating mostly web applications. </p>
     <div class="hero-section-action-wrapper">
-      <button class="action-btn-primary">View Projects</button>
-      <button class="action-btn-secondary">Contact Me</button>
+      <button (click)="goToProjects()" class="action-btn-primary">View Projects</button>
+      <button class="action-btn-secondary">Resume</button>
     </div>
   </section>
-
   <section class="skills-section">
     <h1 class="section-header">Skills</h1>
     <article class="skills-wrapper">
       <div class="front-end-card">
         <h2>Front End</h2>
         <div class="front-end-icons-list">
-          <svg-icon class = "front-end-icon" src = "assets/react.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/angular.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/typescript.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/redux.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/rxjs.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/sass.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/material.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/html.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/css3.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/react.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/angular.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/typescript.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/redux.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/rxjs.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/sass.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/material.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/html.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/css3.svg"></svg-icon>
         </div>
       </div>
       <div class="back-end-card">
         <h2>Back End</h2>
         <div class="front-end-icons-list">
-          <svg-icon class = "front-end-icon" src = "assets/nodejs.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/express.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/postgresql.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/reddis.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/docker.svg"></svg-icon>
-          <svg-icon class = "front-end-icon" src = "assets/git.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/nodejs.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/express.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/postgresql.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/reddis.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/docker.svg"></svg-icon>
+          <svg-icon class="front-end-icon" src="assets/git.svg"></svg-icon>
         </div>
       </div>
     </article>
   </section>
 </div>
-<section class="project-section">
-  <header class = "project-section-header">
-    Projects
-  </header>
+<section #projects class="project-section">
+  <header class="project-section-header"> Projects </header>
+  <app-project-list></app-project-list>
   <app-project-list></app-project-list>
 </section>
+<footer class="footer">
+    <a class = "footer-link">
+      <svg-icon class="footer-icon" src="assets/github.svg"></svg-icon>
+    </a>
+    <a class = "footer-link">
+      <svg-icon class="footer-icon-linkedin" src="assets/linkedin.svg"></svg-icon>
+    </a>
+</footer>
