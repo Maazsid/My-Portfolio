@@ -79,6 +79,7 @@
   border-radius: 6px;
   display: flex;
   align-items: center;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   &.filled {
     background-color: $primary-color-300;
     color: #fff;
@@ -93,7 +94,6 @@
     color: $primary-color-500;
     border: none;
     background-color: #e9f5ff;
-    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
     transition: color 300ms, background-color 300ms;
     &:hover {
       background-color: $primary-color-300;

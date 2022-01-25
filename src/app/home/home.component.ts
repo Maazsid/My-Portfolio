@@ -1,4 +1,10 @@
-import { Component, ElementRef, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  TemplateRef,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +13,21 @@ import { Component, ElementRef, OnInit, TemplateRef, ViewChild } from '@angular/
 })
 export class HomeComponent implements OnInit {
   @ViewChild('projects') projects: ElementRef<HTMLElement>;
+  @ViewChild('contact') contact: ElementRef<HTMLElement>;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   goToProjects() {
-    this.projects.nativeElement.scrollIntoView({behavior: 'smooth'})
+    this.projects.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  goToContact() {
+    console.log('clicked')
+
+    this.contact.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 }

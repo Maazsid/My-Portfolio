@@ -127,19 +127,20 @@
   margin-top: 48px;
 }
 
-.section-header {
+.section-header,
+.contact-section-header {
   position: relative;
   font-family: $primary-font;
   color: $neutral-color-600;
-  font-size: 65px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 500;
   &::after {
     position: absolute;
     content: "";
     bottom: -4px;
     left: 0px;
     width: 70px;
-    height: 10px;
+    height: 6px;
     border-radius: 50px;
     background-color: $primary-color-300;
   }
@@ -155,7 +156,7 @@
 
 .front-end-card,
 .back-end-card {
-  font-size: 18px;
+  font-size: 16px;
   color: $neutral-color-600;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
   padding: 16px;
@@ -187,27 +188,31 @@
   position: relative;
   font-family: $primary-font;
   color: $grey-color-500;
-  font-size: 65px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 500;
   &::after {
     position: absolute;
     content: "";
-    bottom: -4px;
+    bottom: -10px;
     left: 0px;
-    width: 70px;
-    height: 10px;
+    width: 74px;
+    height: 6px;
     border-radius: 50px;
     background-color: $primary-color-300;
   }
 }
 .contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
   width: 82%;
   margin: 0 auto;
-  padding: 30px 0px;
-  min-height: 50vh;
+  padding: 10px 0px;
+  min-height: 400px;
 }
 
-.footer {
+.section {
   margin-top: 56px;
   min-height: 300px;
   display: flex;
@@ -215,11 +220,20 @@
   align-items: center;
 }
 
-.footer-link {
+.contact-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 68px;
+  margin-top: -65px;
+  flex: 1;
+}
+
+.section-link {
   margin-right: 24px;
 }
 
-.footer-icon {
+.section-icon {
   & svg {
     fill: $neutral-color-700;
     width: 45px;
@@ -231,15 +245,14 @@
     }
   }
 }
-.footer-icon-linkedin {
+.section-icon-linkedin {
   & svg {
     width: 45px;
     height: 45px;
     &:hover {
+      cursor: pointer;
       path:nth-of-type(1) {
-        cursor: pointer;
         fill: $neutral-color-800;
-        cursor: pointer;
       }
     }
   }
@@ -248,4 +261,25 @@
     fill: $neutral-color-700;
     transition: fill 300ms;
   }
+}
+
+.section-icon-mail {
+  & svg {
+    width: 45px;
+    height: 45px;
+    & circle {
+      fill: $neutral-color-700;
+      transition: fill 300ms;
+    }
+    &:hover {
+      cursor: pointer;
+      & circle {
+        fill: $neutral-color-800;
+      }
+    }
+  }
+}
+
+.contact-section-header {
+  font-size: 45px;
 }
